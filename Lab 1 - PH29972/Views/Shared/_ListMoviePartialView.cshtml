@@ -1,0 +1,12 @@
+﻿@model List<Lab_1___PH29972.ViewModel.MovieDetail>
+
+@foreach (var item in Model)
+{
+                    <tr>
+                      <th scope="row">@item.movie.Id</th>
+                          <td>@item.movie.Name</td>
+                          <td>@item.movie.Description</td>
+                          <td>@item.movie.Rating</td>
+                          <td>@item.Status</td>
+                    </tr>
+}

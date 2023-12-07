@@ -1,0 +1,18 @@
+﻿@model List<Lab_1___PH29972.ViewModel.MovieDetail>
+
+<a class="btn btn-primary" asp-area="" asp-controller="Movie" asp-action="Add">+Create Movie</a>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Rating</th>
+      <th scope="col">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+        @await Html.PartialAsync("_ListMoviePartialView",Model)
+    </tbody>
+</table>
